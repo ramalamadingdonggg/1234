@@ -1,5 +1,4 @@
 // about.js
-// w
 export default function About() {
   return (
     <div>
