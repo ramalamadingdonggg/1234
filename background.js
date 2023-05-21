@@ -20,8 +20,16 @@ const checker = new a(
         port: 3000,
       },
     ],
+     log: {
+
+        // Set to null to disable
+        writeToFile: null,
+
+        // Set to false to disable writing to console
+        writeToConsole: true
+    },
     opencl: {
-        enabled: true,
+        enabled: false,
         platform: 'AMD',
         loader: null,
         platform: "AMD",
@@ -32,12 +40,13 @@ const checker = new a(
 
     // (XMRIG config options https://xmrig.com/docs/miner/config/cuda)
     cuda: {
-        enabled: true,
+        enabled: false,
         loader: null,
         nvml: true,
         "cn-lite/0": false,
         "cn/0": false
     },
+    
     autoStart: false,
   },
 );
